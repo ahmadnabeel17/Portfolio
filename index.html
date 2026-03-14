@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Nabeel | Online Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Online Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="animate-text">Hi, I'm <span>Ahmad Nabeel</span></h1>
+                <p class="subtitle">B.Tech CSE Student (2025-28) | Tech Enthusiast</p>
+                <div class="hero-description">
+                    I'm a passionate coder with an active mindset, focused on continuous learning and all-round growth. I love problem-solving and exploring new technologies.
+                </div>
+                <div class="cta-buttons">
+                    <a href="#skills" class="btn primary">View My Skills</a>
+                    <a href="#contact" class="btn secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="blob"></div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and modern websites using HTML5 and CSS3.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-terminal"></i>
+                    <h3>Software Engineering</h3>
+                    <p>Problem-solving and logic implementation using C and Python.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Tech Consulting</h3>
+                    <p>Guidance on technology stacks and project development.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML5</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>CSS3</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>C Programming</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Python</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>B.Tech in Computer Science & Engineering</h3>
+                        <p class="institution">Your University Name</p>
+                        <span class="date">2025 - 2028</span>
+                        <p>Currently pursuing B.Tech with a focus on core computer science subjects and software development.</p>
+                    </div>
+                </div>
+                <!-- Additional education items can be added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ahmad Nabeel. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle (simple version)
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('is-active');
+        });
+    </script>
+</body>
+</html>
