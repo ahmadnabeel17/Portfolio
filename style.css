@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #a855f7;
-    --bg-dark: #0f172a;
-    --bg-card: rgba(30, 41, 59, 0.7);
-    --text-white: #f8fafc;
-    --text-muted: #94a3b8;
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --primary-color: #D88FAA;
+    --secondary-color: #BFD1E5;
+    --bg-dark: #542344;
+    --bg-card: rgba(191, 209, 229, 0.15);
+    --text-white: #EBF5EE;
+    --text-muted: #808080;
+    --glass-border: rgba(235, 245, 238, 0.15);
 }
 
 * {
@@ -47,7 +47,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(84, 35, 68, 0.8);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--glass-border);
 }
@@ -141,7 +141,7 @@ header {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     animation: blobify 8s infinite alternate ease-in-out;
-    filter: drop-shadow(0 0 50px rgba(99, 102, 241, 0.4));
+    filter: drop-shadow(0 0 50px rgba(216, 143, 170, 0.4));
 }
 
 @keyframes blobify {
@@ -181,7 +181,7 @@ header {
 
 .btn.primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 10px 20px rgba(216, 143, 170, 0.3);
 }
 
 .btn.secondary {
@@ -190,7 +190,7 @@ header {
 }
 
 .btn.secondary:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(235, 245, 238, 0.05);
 }
 
 /* Sections General */
@@ -294,7 +294,7 @@ section {
 
 .skill-bar {
     height: 10px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(235, 245, 238, 0.1);
     border-radius: 5px;
     overflow: hidden;
 }
@@ -362,7 +362,7 @@ section {
 .date {
     display: inline-block;
     padding: 0.2rem 0.8rem;
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(216, 143, 170, 0.1);
     color: var(--primary-color);
     border-radius: 20px;
     font-size: 0.85rem;
@@ -400,7 +400,7 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background: rgba(15, 23, 42, 0.95);
+        background: rgba(84, 35, 68, 0.95);
         backdrop-filter: blur(10px);
         flex-direction: column;
         padding: 2rem 0;
