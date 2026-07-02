@@ -94,7 +94,7 @@ header {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 10%;
     margin-top: 60px;
     position: relative;
@@ -115,8 +115,10 @@ header {
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 800px;
     z-index: 2;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .hero h1 {
@@ -135,28 +137,14 @@ header {
     display: inline-block;
 }
 
-.blob {
-    width: 450px;
-    height: 450px;
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    animation: blobify 8s infinite alternate ease-in-out;
-    filter: drop-shadow(0 0 50px rgba(216, 143, 170, 0.4));
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-img {
-    width: 100%;
-    height: 100%;
+.profile-img-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
     object-fit: cover;
-}
-
-@keyframes blobify {
-    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
-    100% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+    margin-bottom: 2rem;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 10px 30px rgba(216, 143, 170, 0.3);
 }
 
 .subtitle {
@@ -174,6 +162,7 @@ header {
 .cta-buttons {
     display: flex;
     gap: 1.5rem;
+    justify-content: center;
 }
 
 .btn {
@@ -474,10 +463,10 @@ footer {
         display: none;
     }
     
-    .blob {
-        width: 300px;
-        height: 300px;
-        margin-top: 2rem;
+    .profile-img-circle {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 1.5rem;
     }
     
     .subtitle {
@@ -578,9 +567,9 @@ footer {
         font-size: 3.5rem;
     }
     
-    .blob {
-        width: 350px;
-        height: 350px;
+    .profile-img-circle {
+        width: 220px;
+        height: 220px;
     }
     
     section {
